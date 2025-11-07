@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 15%;
+
+    /* Verde institucional Fundación Santo Domingo */
+    --primary: 143 66% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 143 66% 40%;
+    --primary-light: 143 66% 95%;
+
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 15%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 143 66% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Estados de tareas */
+    --status-pending: 0 84% 60%;
+    --status-in-progress: 45 93% 47%;
+    --status-completed: 143 66% 45%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 143 66% 45%;
+
+    --radius: 0.75rem;
+
+    /* Sidebar verde institucional */
+    --sidebar-background: 143 66% 45%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 143 66% 45%;
+    --sidebar-accent: 143 66% 40%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 143 66% 40%;
+    --sidebar-ring: 0 0% 100%;
+
+    /* Efectos y sombras */
+    --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.12);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 0 0% 10%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 143 66% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 143 66% 40%;
+    --primary-light: 143 66% 20%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 143 66% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --status-pending: 0 84% 60%;
+    --status-in-progress: 45 93% 47%;
+    --status-completed: 143 66% 45%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 143 66% 45%;
+
+    --sidebar-background: 143 66% 35%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 143 66% 35%;
+    --sidebar-accent: 143 66% 30%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 143 66% 30%;
+    --sidebar-ring: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

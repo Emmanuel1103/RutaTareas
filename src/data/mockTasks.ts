@@ -1,0 +1,121 @@
+import { Task } from "@/types/task";
+
+export const mockTasks: Task[] = [
+  {
+    id: "1",
+    name: "Implementación Sistema de Gestión Documental",
+    theme: "Tecnología",
+    activity: "Desarrollo e implementación de plataforma digital para gestión de documentos",
+    priority: 1,
+    status: "En gestión",
+    responsible: "María González",
+    deadline: "2025-12-15",
+    description: "Implementar un sistema digital completo para la gestión y archivo de documentos institucionales, incluyendo módulos de digitalización, búsqueda avanzada y control de versiones.",
+    followUps: [
+      {
+        id: "f1",
+        date: "2025-11-01",
+        comment: "Reunión inicial con el equipo de TI. Se definieron los requerimientos principales.",
+      },
+      {
+        id: "f2",
+        date: "2025-11-10",
+        comment: "Se completó el análisis de viabilidad técnica. Se propuso utilizar solución cloud.",
+      },
+    ],
+  },
+  {
+    id: "2",
+    name: "Campaña de Vacunación Comunitaria",
+    theme: "Salud",
+    activity: "Organización de jornada de vacunación en comunidades vulnerables",
+    priority: 1,
+    status: "Pendiente",
+    responsible: "Dr. Carlos Ramírez",
+    deadline: "2025-11-20",
+    description: "Coordinar jornada de vacunación gratuita en 5 comunidades de bajos recursos, incluyendo logística, personal médico y comunicación con autoridades locales.",
+    followUps: [
+      {
+        id: "f3",
+        date: "2025-10-25",
+        comment: "Se solicitó autorización a las autoridades sanitarias locales.",
+      },
+    ],
+  },
+  {
+    id: "3",
+    name: "Talleres de Educación Financiera",
+    theme: "Educación",
+    activity: "Impartir talleres de alfabetización financiera para jóvenes",
+    priority: 2,
+    status: "Finalizada",
+    responsible: "Ana Patricia Flores",
+    deadline: "2025-10-30",
+    description: "Serie de 6 talleres sobre educación financiera básica dirigidos a jóvenes de 15 a 25 años, cubriendo temas como ahorro, presupuesto personal y crédito responsable.",
+    followUps: [
+      {
+        id: "f4",
+        date: "2025-10-15",
+        comment: "Se completaron los 6 talleres con una asistencia promedio de 45 personas.",
+      },
+      {
+        id: "f5",
+        date: "2025-10-30",
+        comment: "Evaluación final realizada. 92% de satisfacción de los participantes.",
+      },
+    ],
+  },
+  {
+    id: "4",
+    name: "Actualización de Infraestructura Eléctrica",
+    theme: "Infraestructura",
+    activity: "Renovación del sistema eléctrico del centro comunitario",
+    priority: 2,
+    status: "En gestión",
+    responsible: "Ing. Roberto Méndez",
+    deadline: "2025-12-01",
+    description: "Actualización completa del sistema eléctrico incluyendo cableado, tableros de distribución y sistema de iluminación LED para mejorar eficiencia energética.",
+    followUps: [
+      {
+        id: "f6",
+        date: "2025-11-05",
+        comment: "Se completó la evaluación técnica. Se identificaron 3 áreas prioritarias.",
+      },
+    ],
+  },
+  {
+    id: "5",
+    name: "Programa de Becas Universitarias",
+    theme: "Educación",
+    activity: "Selección y entrega de becas para estudiantes de bajos recursos",
+    priority: 1,
+    status: "En gestión",
+    responsible: "Licda. Patricia Morales",
+    deadline: "2025-11-30",
+    description: "Proceso de selección y adjudicación de 50 becas universitarias completas para estudiantes destacados de escasos recursos económicos.",
+    followUps: [
+      {
+        id: "f7",
+        date: "2025-10-20",
+        comment: "Se recibieron 234 solicitudes. Proceso de evaluación en curso.",
+      },
+      {
+        id: "f8",
+        date: "2025-11-08",
+        comment: "Comité evaluador completó primera fase. 120 candidatos preseleccionados.",
+      },
+    ],
+  },
+  {
+    id: "6",
+    name: "Auditoría Interna de Procesos",
+    theme: "Gestión Administrativa",
+    activity: "Revisión integral de procedimientos administrativos y financieros",
+    priority: 3,
+    status: "Pendiente",
+    responsible: "Lic. Fernando Castro",
+    deadline: "2026-01-15",
+    description: "Auditoría completa de los procesos administrativos, financieros y operativos de la fundación para identificar áreas de mejora y asegurar cumplimiento normativo.",
+    followUps: [],
+  },
+];
